@@ -55,3 +55,32 @@ Set up the zomato_db in PostgreSQL and run the CREATE TABLE and COPY commands to
 Run the main pipeline: python src/run_pipeline.py to create the mart_performance table.
 
 Connect Tableau to your local PostgreSQL instance and the mart_performance table to explore the data.
+
+The Story about Dashboards 
+## 1. The KPI Cards (What is happening?)
+Significance: These are the vital signs of the business. Like a pilot checking the altitude and speed, a manager looks at these first to get an instant health check. They answer the most fundamental questions: "Are we growing?" and "How much business are we doing right now?"
+
+Impact for Zomato: A stakeholder can see the Total Revenue and Total Orders in 5 seconds and know if it's a good day or a bad day. The percent change comparison provides immediate context, telling them if the trend is positive or negative without needing to look at any other chart.
+
+## 2. The Monthly Revenue Trend Chart (What's the bigger picture?)
+Significance: This chart moves beyond a single day's performance to show momentum and seasonality. It answers the question, "Is our growth strategy working over the long term?" It helps to smooth out daily noise and reveals underlying patterns.
+
+Impact for Zomato: This trend line can show if a major marketing campaign in March caused a sustained lift in revenue or just a short-term spike. It also helps with forecasting and resource planning for expected peaks (like holidays) and troughs.
+
+## 3. The Orders by Zone Map (Where is it happening?)
+Significance: This chart brings a critical geospatial dimension to the data. Business doesn't happen evenly; it's concentrated in specific areas. The map immediately pinpoints high-performing and underperforming zones.
+
+Impact for Zomato: The map allows an operations manager to see that Koramangala is the top zone and might need more delivery partners to handle the volume. Conversely, it might show that a zone like Jayanagar has low orders, prompting a targeted marketing campaign with local restaurant partnerships to stimulate growth in that specific area.
+
+## 4. The Advanced Charts (Why is it happening & what should we do?)
+Scatter Plot (Restaurant Performance):
+
+Significance: This is your "actionable insights" chart. It moves beyond simple rankings to reveal complex relationships. Instead of just knowing who is on top, it answers, "Who has the most potential?"
+
+Impact for Zomato: This is where a strategist finds money. By identifying restaurants with high ratings but low order volume, you've created a ready-made list for the marketing team to promote as "hidden gems," creating a win-win for Zomato, the restaurant, and the customer.
+
+Cohort Analysis (Customer Loyalty):
+
+Significance: This is the most advanced chart, showing your ability to analyze long-term business health. It answers the critical question, "Are we just acquiring new customers, or are we actually keeping them?"
+
+Impact for Zomato: This chart proves the long-term value of the business. If it shows that customers acquired in June are placing more repeat orders than those from January, it proves that recent product improvements are successfully making the platform "stickier" and more valuable over time.
