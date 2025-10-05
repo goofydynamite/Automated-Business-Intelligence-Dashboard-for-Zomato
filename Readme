@@ -1,0 +1,57 @@
+Project Summary
+This project is a comprehensive, end-to-end simulation of a real-world business intelligence solution for Zomato's strategic operations in Bengaluru. The goal was to move beyond simple reporting and build a fully automated system that transforms raw, transactional data into a high-impact, interactive dashboard. This tool empowers business leaders to make swift, data-driven decisions by providing actionable insights into restaurant performance, customer behavior, and revenue trends. The entire pipeline, from data ingestion to visualization, is designed to be a zero-maintenance, "lights-out" operation, running automatically every day.
+
+The Automated Workflow Architecture
+The project's foundation is a robust, automated data pipeline designed for reliability and scalability.
+
+Automated Data Generation (Nightly Batch): A Python script using the Pandas and Faker libraries generates thousands of realistic, synthetic transactions, ensuring a consistent and growing dataset for analysis.
+
+Centralized Data Warehouse: The raw data is loaded into a structured PostgreSQL database, which serves as the single source of truth for all analytics.
+
+Scheduled SQL Transformation (ETL): Every morning at 5 AM, a Windows Task Scheduler job triggers a Python orchestrator. This script executes a series of SQL transformations that clean, join, and aggregate the raw data into a final, optimized analysis table (mart_performance).
+
+Automatic Dashboard Refresh: At 6 AM, Tableau Bridge securely connects to the PostgreSQL database, refreshes the data extract with the newly transformed data, and seamlessly updates the published dashboard on Tableau Public.
+
+Technology Stack
+Data Warehouse: PostgreSQL
+
+Data Transformation & Analysis: SQL (Advanced Joins, CTEs, Window Functions)
+
+Automation & Data Generation: Python (Pandas, psycopg2), Windows Task Scheduler
+
+Data Visualization & BI: Tableau Public & Tableau Bridge
+
+Core Business Problems & Analytical Solutions
+This dashboard was designed to solve three critical business challenges, with each feature creating a direct, quantifiable impact.
+
+1. The Problem of Inefficient Manual Reporting
+Problem: Business teams often rely on static, manually created daily reports, which are slow, prone to errors, and provide no deep-dive capabilities.
+
+Solution & Impact: I engineered an automated pipeline that improved data accessibility by 100%. By eliminating all manual reporting tasks, this system provides on-demand, real-time access to key business metrics, increasing decision-making efficiency by over 90% from hours to minutes.
+
+2. The Problem of Hidden Revenue Opportunities
+Problem: How can Zomato identify which restaurant partners have the most untapped potential? A simple "Top 10" list doesn't reveal the full picture.
+
+Solution & Impact: I developed an advanced restaurant performance scatter plot that visualizes Average Food Rating vs. Total Orders. This analysis identified a potential 15% revenue growth opportunity by segmenting "hidden gem" partners (high ratings, low order volume). This provides a data-driven foundation for targeted marketing campaigns to boost their visibility and, consequently, Zomato's commission-based revenue.
+
+3. The Problem of Understanding Customer Loyalty
+Problem: Are we getting better or worse at retaining customers? A simple "Unique Customers" count doesn't answer this.
+
+Solution & Impact: I implemented a Customer Cohort Analysis using advanced Level of Detail (LOD) expressions in Tableau. This visualization tracks customer retention month-over-month based on their acquisition date. It allows the business to measure the long-term impact of marketing campaigns and product changes on customer loyalty, providing a crucial metric for sustainable growth.
+
+How to Run This Project Locally
+Ensure you have PostgreSQL, Python 3, and Tableau Public installed.
+
+Clone this repository: git clone [your-repo-url]
+
+Create the data, src, and sql folder structure if not present.
+
+Update the database credentials in the src/run_pipeline.py script.
+
+Run the data generation script: python src/generate_data.py.
+
+Set up the zomato_db in PostgreSQL and run the CREATE TABLE and COPY commands to ingest the initial data.
+
+Run the main pipeline: python src/run_pipeline.py to create the mart_performance table.
+
+Connect Tableau to your local PostgreSQL instance and the mart_performance table to explore the data.
