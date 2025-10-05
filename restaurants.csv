@@ -1,0 +1,501 @@
+restaurant_id,restaurant_name,cuisine,zone
+2000,"Gola, Bedi and Suresh Foods",Chinese,Indiranagar
+2001,Ramakrishnan-Sarkar Foods,South Indian,Indiranagar
+2002,"Dua, Gupta and Mammen Foods",North Indian,Koramangala
+2003,"Kothari, Doctor and Mistry Foods",Cafe,Whitefield
+2004,Kibe Inc Foods,North Indian,Koramangala
+2005,Murthy-Subramanian Foods,Pizza,Koramangala
+2006,Parmer Group Foods,Pizza,Whitefield
+2007,Dar LLC Foods,South Indian,Whitefield
+2008,"Borra, Patla and Mangat Foods",Cafe,Jayanagar
+2009,"Bhatt, Nayak and Goswami Foods",Cafe,Whitefield
+2010,Sampath-Majumdar Foods,Cafe,HSR Layout
+2011,Thaman-Karnik Foods,Pizza,Jayanagar
+2012,Patil Ltd Foods,Pizza,Jayanagar
+2013,Lalla Inc Foods,South Indian,Whitefield
+2014,"Guha, Minhas and Tata Foods",Cafe,Indiranagar
+2015,"Divan, Shan and Bhatnagar Foods",Cafe,Indiranagar
+2016,Bhattacharyya-Andra Foods,South Indian,Koramangala
+2017,Kala-Cherian Foods,Cafe,Jayanagar
+2018,Nagarajan-Kumer Foods,Chinese,Koramangala
+2019,Mitter LLC Foods,Biryani,Koramangala
+2020,"Bhasin, Trivedi and Kamdar Foods",Chinese,Jayanagar
+2021,"Kaur, Suri and Varughese Foods",Chinese,Indiranagar
+2022,"Badami, Munshi and Shah Foods",South Indian,Indiranagar
+2023,Jhaveri and Sons Foods,South Indian,Whitefield
+2024,"Seshadri, Muni and Behl Foods",Pizza,Jayanagar
+2025,Sehgal-Parsa Foods,Cafe,Jayanagar
+2026,"Nath, Rana and Sankar Foods",Chinese,Jayanagar
+2027,Dass Inc Foods,Biryani,Indiranagar
+2028,Dey LLC Foods,South Indian,Whitefield
+2029,Sule Group Foods,North Indian,HSR Layout
+2030,"Narayan, Virk and Rout Foods",Biryani,Whitefield
+2031,Rana-Iyengar Foods,Chinese,Jayanagar
+2032,Nazareth and Sons Foods,South Indian,Indiranagar
+2033,"Rout, Luthra and Mahajan Foods",Chinese,Koramangala
+2034,Khurana LLC Foods,Pizza,Jayanagar
+2035,"Barad, Guha and Sane Foods",Pizza,Koramangala
+2036,"Shankar, Pant and Baria Foods",South Indian,Indiranagar
+2037,"Swamy, Soman and Narayanan Foods",Biryani,Whitefield
+2038,Vig-Randhawa Foods,Pizza,HSR Layout
+2039,Kapur LLC Foods,Biryani,Jayanagar
+2040,"Agate, Sehgal and Ramakrishnan Foods",North Indian,Whitefield
+2041,"Issac, Magar and Nagarajan Foods",Chinese,Indiranagar
+2042,Date LLC Foods,North Indian,Koramangala
+2043,"Nayak, Sachar and Vohra Foods",Biryani,Jayanagar
+2044,"Sheth, Kale and Lad Foods",Cafe,Indiranagar
+2045,"Sastry, Deshmukh and Shukla Foods",North Indian,Whitefield
+2046,Divan Ltd Foods,South Indian,HSR Layout
+2047,"Walla, D’Alia and Lad Foods",Pizza,HSR Layout
+2048,Naik-Bali Foods,South Indian,HSR Layout
+2049,Maharaj-Wali Foods,Chinese,HSR Layout
+2050,Brahmbhatt PLC Foods,North Indian,Koramangala
+2051,Sekhon-Kade Foods,Cafe,Koramangala
+2052,Deol-Sule Foods,Pizza,Whitefield
+2053,Mishra Inc Foods,Cafe,Indiranagar
+2054,Choudhry LLC Foods,Pizza,Indiranagar
+2055,Natt-Kalla Foods,South Indian,Indiranagar
+2056,"Ben, Seth and Anne Foods",North Indian,Whitefield
+2057,Agarwal and Sons Foods,Chinese,Koramangala
+2058,"Chad, Joshi and Mistry Foods",Pizza,HSR Layout
+2059,Nagi-Yadav Foods,Pizza,Whitefield
+2060,Pathak-Srinivas Foods,Biryani,Whitefield
+2061,Nori PLC Foods,Cafe,Koramangala
+2062,Raj Ltd Foods,Biryani,HSR Layout
+2063,Prabhu PLC Foods,Biryani,Koramangala
+2064,"Varty, Patil and Pingle Foods",Biryani,Indiranagar
+2065,Sawhney Inc Foods,Chinese,Whitefield
+2066,Borah-Mahajan Foods,Pizza,Indiranagar
+2067,"Bora, Bumb and Lad Foods",North Indian,Jayanagar
+2068,Sheth-Goyal Foods,Cafe,Koramangala
+2069,"Sandhu, Master and Kibe Foods",Chinese,Indiranagar
+2070,Bava Ltd Foods,South Indian,Indiranagar
+2071,"Sabharwal, Yadav and Chada Foods",Biryani,Jayanagar
+2072,Bedi-Kanda Foods,Pizza,Koramangala
+2073,"Dhillon, Joshi and Dube Foods",North Indian,HSR Layout
+2074,Arya Ltd Foods,Chinese,Jayanagar
+2075,"Rajagopal, Sani and Vohra Foods",North Indian,Koramangala
+2076,Parmar-Panchal Foods,North Indian,Jayanagar
+2077,Butala-Palla Foods,North Indian,Jayanagar
+2078,"Sangha, Murty and Datta Foods",Pizza,Indiranagar
+2079,Parsa-Dayal Foods,Pizza,HSR Layout
+2080,Badami Group Foods,Pizza,Jayanagar
+2081,"Kara, Dhillon and Malhotra Foods",Pizza,Indiranagar
+2082,Buch-Narayanan Foods,South Indian,Jayanagar
+2083,Setty-Pau Foods,South Indian,HSR Layout
+2084,Soni-Panchal Foods,Cafe,Jayanagar
+2085,"Basak, Gill and Kota Foods",Chinese,HSR Layout
+2086,"Swaminathan, Sami and Gaba Foods",Chinese,Whitefield
+2087,"Yadav, Saraf and Sachdeva Foods",North Indian,Whitefield
+2088,"Deol, Varughese and Tandon Foods",Chinese,Whitefield
+2089,Uppal LLC Foods,Biryani,Indiranagar
+2090,Lal-Yadav Foods,Pizza,Koramangala
+2091,Soman PLC Foods,North Indian,Whitefield
+2092,Anand-Shere Foods,Pizza,Jayanagar
+2093,Keer-Kala Foods,South Indian,Whitefield
+2094,Sundaram Ltd Foods,Biryani,Jayanagar
+2095,Dewan-Sachar Foods,Chinese,HSR Layout
+2096,"Lall, Pillai and Patla Foods",South Indian,Koramangala
+2097,Mangat-Arora Foods,Chinese,Koramangala
+2098,"Sha, Johal and Brahmbhatt Foods",Pizza,Whitefield
+2099,"Om, Pradhan and Jayaraman Foods",Pizza,Koramangala
+2100,More Ltd Foods,Biryani,HSR Layout
+2101,Banik LLC Foods,North Indian,HSR Layout
+2102,"Mittal, Shanker and Mahal Foods",Pizza,Jayanagar
+2103,Sagar LLC Foods,Cafe,Indiranagar
+2104,Mallick-Agate Foods,Pizza,Whitefield
+2105,Narain Inc Foods,Biryani,Indiranagar
+2106,"Jain, Srinivas and Ahuja Foods",North Indian,Jayanagar
+2107,Modi PLC Foods,Cafe,Whitefield
+2108,"Narain, Manda and Bose Foods",Cafe,Jayanagar
+2109,"Seth, Sengupta and Dar Foods",North Indian,Whitefield
+2110,"Vasa, Khanna and Dhingra Foods",Pizza,Koramangala
+2111,"Sha, Virk and Baral Foods",Cafe,Whitefield
+2112,"Vora, Hans and Borra Foods",Chinese,Koramangala
+2113,Butala Inc Foods,Chinese,Indiranagar
+2114,"Agrawal, Ramachandran and Saini Foods",North Indian,Koramangala
+2115,Shukla and Sons Foods,Pizza,Indiranagar
+2116,Nagar Group Foods,North Indian,Indiranagar
+2117,"Minhas, Mohan and Grewal Foods",North Indian,HSR Layout
+2118,Dugar-Bassi Foods,South Indian,Jayanagar
+2119,"Mohanty, Kari and Sinha Foods",Pizza,HSR Layout
+2120,"Vala, Jain and Sane Foods",Biryani,HSR Layout
+2121,Sehgal Group Foods,South Indian,HSR Layout
+2122,"Bhatnagar, Reddy and Puri Foods",Chinese,Koramangala
+2123,Keer and Sons Foods,North Indian,Koramangala
+2124,Kulkarni-Sama Foods,Pizza,HSR Layout
+2125,Samra-Sekhon Foods,Cafe,Koramangala
+2126,"Yohannan, Thaker and Barad Foods",Chinese,Indiranagar
+2127,Shanker-Nigam Foods,North Indian,Jayanagar
+2128,Bobal Ltd Foods,South Indian,HSR Layout
+2129,"Rana, Mukhopadhyay and Nigam Foods",Biryani,HSR Layout
+2130,Salvi-Acharya Foods,North Indian,Indiranagar
+2131,Padmanabhan Inc Foods,South Indian,Koramangala
+2132,"Ramachandran, Kala and Mahajan Foods",Chinese,Jayanagar
+2133,"Bhardwaj, Narain and Kurian Foods",Chinese,HSR Layout
+2134,Jhaveri-Devi Foods,Cafe,Indiranagar
+2135,Amble Ltd Foods,Biryani,HSR Layout
+2136,Dora Group Foods,North Indian,Koramangala
+2137,Bhardwaj-Chowdhury Foods,North Indian,HSR Layout
+2138,Pant LLC Foods,Chinese,Jayanagar
+2139,Mitter-Bose Foods,North Indian,Indiranagar
+2140,Gour-Vig Foods,Cafe,Jayanagar
+2141,"Babu, Brahmbhatt and Sampath Foods",Pizza,Jayanagar
+2142,Devi-Dugar Foods,Chinese,Indiranagar
+2143,Krishna-Samra Foods,Biryani,HSR Layout
+2144,Bhatia LLC Foods,South Indian,Jayanagar
+2145,"Magar, Sahota and Luthra Foods",South Indian,Koramangala
+2146,Zachariah and Sons Foods,South Indian,Indiranagar
+2147,Munshi Ltd Foods,Biryani,Whitefield
+2148,"Kaul, Wason and Sankar Foods",South Indian,HSR Layout
+2149,"Ahuja, Deep and Bhattacharyya Foods",Cafe,Jayanagar
+2150,Chand-Narang Foods,North Indian,Jayanagar
+2151,Baral LLC Foods,Pizza,HSR Layout
+2152,Merchant-Prakash Foods,South Indian,HSR Layout
+2153,Prabhakar Inc Foods,Cafe,Indiranagar
+2154,Balan-Bhatti Foods,Pizza,HSR Layout
+2155,Parmar-Lanka Foods,Biryani,Whitefield
+2156,Halder PLC Foods,Pizza,Koramangala
+2157,"Oak, Chaudry and Om Foods",North Indian,HSR Layout
+2158,Gera-Saini Foods,Pizza,Jayanagar
+2159,Hans Ltd Foods,North Indian,Jayanagar
+2160,Taneja Ltd Foods,Cafe,Koramangala
+2161,"Bhattacharyya, Kannan and Vala Foods",Pizza,HSR Layout
+2162,Ganesh and Sons Foods,Chinese,Whitefield
+2163,Contractor-Saxena Foods,Pizza,Whitefield
+2164,"Pillay, Purohit and Hayer Foods",South Indian,HSR Layout
+2165,"Madan, Suresh and Shukla Foods",South Indian,HSR Layout
+2166,Dixit Inc Foods,South Indian,Jayanagar
+2167,Soni LLC Foods,Cafe,HSR Layout
+2168,Pandit Group Foods,Biryani,Indiranagar
+2169,Sheth-Agarwal Foods,Chinese,Jayanagar
+2170,Arya-Sahni Foods,North Indian,HSR Layout
+2171,"Shankar, Shukla and Kapur Foods",Chinese,HSR Layout
+2172,Ahuja LLC Foods,Cafe,HSR Layout
+2173,"Sule, Chada and Krishnamurthy Foods",Cafe,Jayanagar
+2174,Misra Inc Foods,Cafe,Indiranagar
+2175,"Talwar, Shetty and Ganesan Foods",Biryani,Koramangala
+2176,Tata Inc Foods,Biryani,Whitefield
+2177,Merchant LLC Foods,Biryani,Indiranagar
+2178,"Kamdar, Srinivas and Krishnan Foods",Cafe,Jayanagar
+2179,Apte-Mangal Foods,Biryani,Indiranagar
+2180,"Tailor, Khare and Walia Foods",Cafe,Indiranagar
+2181,"Ahuja, Sura and Rajagopalan Foods",Biryani,Whitefield
+2182,Datta Ltd Foods,Biryani,Jayanagar
+2183,"Swaminathan, Dugar and Kapur Foods",Biryani,Whitefield
+2184,"Dhillon, Deo and Chana Foods",Cafe,HSR Layout
+2185,De-Bandi Foods,Biryani,HSR Layout
+2186,"Ram, Sheth and Sandal Foods",Cafe,Indiranagar
+2187,"Kalita, Dhar and Nanda Foods",Chinese,HSR Layout
+2188,Raja-Grewal Foods,Biryani,HSR Layout
+2189,Sengupta-Prakash Foods,North Indian,Koramangala
+2190,Lanka Group Foods,South Indian,Jayanagar
+2191,Mall-Tella Foods,Cafe,Whitefield
+2192,"Chokshi, Boase and Pau Foods",Chinese,HSR Layout
+2193,"Vora, Mand and Walia Foods",Cafe,Koramangala
+2194,"Ravi, Basak and Walia Foods",South Indian,Indiranagar
+2195,Baral Group Foods,Chinese,HSR Layout
+2196,Jayaraman PLC Foods,Cafe,Whitefield
+2197,Borde-Nanda Foods,Pizza,HSR Layout
+2198,Ravi and Sons Foods,Pizza,Indiranagar
+2199,Dutt Group Foods,Cafe,Indiranagar
+2200,Goswami-Sem Foods,Cafe,Koramangala
+2201,"Behl, Sheth and Menon Foods",Cafe,Koramangala
+2202,"Raman, Lall and Taneja Foods",North Indian,Whitefield
+2203,Yadav-Bumb Foods,Cafe,Whitefield
+2204,"Saini, Sarna and Palla Foods",South Indian,Indiranagar
+2205,Bala-Bajwa Foods,South Indian,Koramangala
+2206,"Sodhi, Mishra and Deep Foods",Cafe,Jayanagar
+2207,Sem Ltd Foods,Cafe,Koramangala
+2208,Jain Ltd Foods,Biryani,Whitefield
+2209,Lal LLC Foods,North Indian,Jayanagar
+2210,"Palan, Ramesh and Nayar Foods",Pizza,Whitefield
+2211,"Pant, Talwar and Bail Foods",Cafe,HSR Layout
+2212,"Shanker, Sama and Sami Foods",Chinese,Koramangala
+2213,Sahni-Dora Foods,North Indian,Koramangala
+2214,"Chaudhuri, Purohit and Dora Foods",North Indian,Koramangala
+2215,Manne LLC Foods,Pizza,HSR Layout
+2216,"Anne, Thakur and Dani Foods",North Indian,Koramangala
+2217,Cherian Inc Foods,Pizza,Jayanagar
+2218,Dada Inc Foods,North Indian,Indiranagar
+2219,Tiwari-Loke Foods,South Indian,HSR Layout
+2220,Dutta Inc Foods,North Indian,Whitefield
+2221,"Magar, Lal and Upadhyay Foods",South Indian,HSR Layout
+2222,"Butala, Gour and Sarkar Foods",Pizza,Koramangala
+2223,Borra Group Foods,Chinese,Whitefield
+2224,"Vaidya, Sawhney and Kanda Foods",Chinese,Indiranagar
+2225,"Borde, Bali and Sridhar Foods",Cafe,Indiranagar
+2226,Thakkar and Sons Foods,Biryani,HSR Layout
+2227,Barman Ltd Foods,South Indian,HSR Layout
+2228,Prabhakar-Mohanty Foods,Chinese,Indiranagar
+2229,Saha-Sule Foods,North Indian,HSR Layout
+2230,"Dhawan, Narang and Rajagopal Foods",Cafe,HSR Layout
+2231,Rajagopal Inc Foods,North Indian,Koramangala
+2232,Memon Inc Foods,South Indian,Jayanagar
+2233,"Bassi, Sangha and Lad Foods",North Indian,Jayanagar
+2234,"Shenoy, Sengupta and Walia Foods",North Indian,HSR Layout
+2235,Setty and Sons Foods,North Indian,Whitefield
+2236,Sathe-Luthra Foods,Pizza,Indiranagar
+2237,Luthra-Varty Foods,Chinese,HSR Layout
+2238,Mane-Tara Foods,Chinese,Whitefield
+2239,Rattan Ltd Foods,North Indian,Indiranagar
+2240,"Yohannan, Sunder and Sidhu Foods",Cafe,Whitefield
+2241,"Bahl, Singhal and Suresh Foods",North Indian,Jayanagar
+2242,"Choudhry, Thakkar and Pai Foods",Pizza,Jayanagar
+2243,Balan-Murthy Foods,Cafe,HSR Layout
+2244,Dutt Inc Foods,Cafe,Indiranagar
+2245,"Anand, Patil and Ramachandran Foods",Cafe,HSR Layout
+2246,"Sridhar, Yogi and Chawla Foods",Biryani,Whitefield
+2247,Choudhary Ltd Foods,Pizza,Jayanagar
+2248,"Batra, Pant and Basu Foods",Biryani,Koramangala
+2249,Khalsa-Sehgal Foods,Biryani,HSR Layout
+2250,Patil-Sandal Foods,Chinese,Whitefield
+2251,"Misra, Walla and Datta Foods",South Indian,Jayanagar
+2252,Varghese Group Foods,Biryani,Whitefield
+2253,"Borde, Biswas and Krishnamurthy Foods",Cafe,Whitefield
+2254,Ramaswamy Ltd Foods,North Indian,HSR Layout
+2255,Goswami-Bava Foods,Biryani,HSR Layout
+2256,Atwal Ltd Foods,Biryani,Indiranagar
+2257,"Karnik, Guha and Gaba Foods",Chinese,Whitefield
+2258,Ravi-Thaker Foods,Chinese,Koramangala
+2259,Batta-Ratti Foods,North Indian,Jayanagar
+2260,"Korpal, Dutt and Kara Foods",North Indian,Whitefield
+2261,"Mahal, Balay and Sethi Foods",South Indian,Whitefield
+2262,Barman-Bhatia Foods,Chinese,Whitefield
+2263,"Shanker, Jaggi and Raj Foods",Chinese,Whitefield
+2264,Ghose-Divan Foods,Pizza,Jayanagar
+2265,Mahal Group Foods,Biryani,Whitefield
+2266,"Sama, Choudhary and Dhar Foods",North Indian,Jayanagar
+2267,Dutta-Srinivas Foods,Cafe,Indiranagar
+2268,"Mannan, Contractor and Venkatesh Foods",Pizza,Koramangala
+2269,Dhar-Chad Foods,Cafe,Indiranagar
+2270,"Guha, Ahuja and Borra Foods",South Indian,Indiranagar
+2271,"Nayar, Lad and Bhatia Foods",Cafe,Whitefield
+2272,Bahl-Dutta Foods,Cafe,Koramangala
+2273,Viswanathan-Murthy Foods,South Indian,HSR Layout
+2274,Nazareth-Gara Foods,Chinese,Jayanagar
+2275,"Chander, Kumer and Karpe Foods",Pizza,Jayanagar
+2276,Jaggi Group Foods,Pizza,HSR Layout
+2277,"Balay, Gaba and Rout Foods",Biryani,Koramangala
+2278,Gara and Sons Foods,Cafe,Whitefield
+2279,Sahota-Purohit Foods,Chinese,HSR Layout
+2280,"Jhaveri, Gole and Arya Foods",South Indian,Whitefield
+2281,Gera Group Foods,Pizza,Koramangala
+2282,Date-Suresh Foods,Chinese,Jayanagar
+2283,Dani PLC Foods,Biryani,HSR Layout
+2284,Mistry-Luthra Foods,South Indian,Koramangala
+2285,Chanda-Bajaj Foods,South Indian,Jayanagar
+2286,"Garg, Khare and Vig Foods",Pizza,Indiranagar
+2287,Bir Inc Foods,Pizza,Indiranagar
+2288,Narasimhan-Nadkarni Foods,South Indian,Whitefield
+2289,"Andra, Chokshi and Baria Foods",Pizza,Koramangala
+2290,Mital-Munshi Foods,North Indian,HSR Layout
+2291,Chacko-Bajaj Foods,Cafe,Koramangala
+2292,"Ramesh, Sengupta and Mani Foods",Chinese,Koramangala
+2293,Chandra Ltd Foods,Pizza,Indiranagar
+2294,Dugar LLC Foods,North Indian,Koramangala
+2295,"Chowdhury, Golla and Balan Foods",Chinese,Indiranagar
+2296,"Varkey, Rana and Goyal Foods",Cafe,Jayanagar
+2297,Mistry-Sinha Foods,Biryani,Jayanagar
+2298,"Golla, Jani and Tiwari Foods",Biryani,HSR Layout
+2299,"Patla, Ramaswamy and Mangal Foods",Pizza,Indiranagar
+2300,Sidhu and Sons Foods,North Indian,Whitefield
+2301,Swamy-Narain Foods,North Indian,Indiranagar
+2302,"Mittal, Date and Samra Foods",North Indian,Indiranagar
+2303,Jain-Nair Foods,Chinese,HSR Layout
+2304,Chaudhari LLC Foods,Pizza,Whitefield
+2305,Kannan-Koshy Foods,South Indian,Whitefield
+2306,Vora-Seth Foods,North Indian,Jayanagar
+2307,Choudhry PLC Foods,North Indian,Whitefield
+2308,"Kulkarni, Jain and Deshpande Foods",Cafe,Jayanagar
+2309,Acharya-Vasa Foods,South Indian,HSR Layout
+2310,Saini-Bava Foods,Pizza,Indiranagar
+2311,Keer-Kaul Foods,Chinese,Indiranagar
+2312,"Sathe, Virk and Morar Foods",Pizza,Indiranagar
+2313,Chaudhary Inc Foods,South Indian,Indiranagar
+2314,"Dalal, Yadav and Jaggi Foods",North Indian,Koramangala
+2315,Kanda PLC Foods,Pizza,HSR Layout
+2316,"Mammen, Halder and Divan Foods",Biryani,Koramangala
+2317,Chaudhari and Sons Foods,Pizza,Whitefield
+2318,Srinivasan-Narain Foods,Biryani,HSR Layout
+2319,Garde-Andra Foods,Cafe,Indiranagar
+2320,"Subramaniam, Shankar and Dhaliwal Foods",Chinese,Indiranagar
+2321,"Narasimhan, Pant and Prakash Foods",South Indian,Indiranagar
+2322,Grewal Inc Foods,Chinese,Whitefield
+2323,"Kannan, Dua and Pal Foods",Cafe,HSR Layout
+2324,Dani-Khatri Foods,South Indian,Jayanagar
+2325,Loke-Ramesh Foods,Chinese,Jayanagar
+2326,Raja-Dani Foods,Cafe,HSR Layout
+2327,"Dass, Barad and Choudhry Foods",North Indian,Koramangala
+2328,Mander LLC Foods,North Indian,Koramangala
+2329,Koshy Group Foods,Chinese,Jayanagar
+2330,Narayan Inc Foods,North Indian,HSR Layout
+2331,Bassi Ltd Foods,South Indian,Whitefield
+2332,Bail Inc Foods,Biryani,HSR Layout
+2333,"Dey, Mallick and Narain Foods",Biryani,Koramangala
+2334,"Mall, Borde and Saxena Foods",North Indian,Indiranagar
+2335,Date PLC Foods,Pizza,Whitefield
+2336,"Sule, Narayan and Kadakia Foods",Cafe,Indiranagar
+2337,Kannan Group Foods,Biryani,Jayanagar
+2338,Gour-Magar Foods,Biryani,Koramangala
+2339,Barad PLC Foods,North Indian,Whitefield
+2340,Prabhu and Sons Foods,Pizza,Whitefield
+2341,Sawhney-Karpe Foods,Pizza,Indiranagar
+2342,Nagi-Raval Foods,Chinese,Jayanagar
+2343,"Madan, Goda and Natt Foods",North Indian,Indiranagar
+2344,Rana-Vala Foods,Pizza,Jayanagar
+2345,Chaudhry Group Foods,Pizza,Indiranagar
+2346,Sandhu LLC Foods,Pizza,Whitefield
+2347,Ben PLC Foods,Chinese,Jayanagar
+2348,Majumdar-Ranganathan Foods,Pizza,Whitefield
+2349,Basu-Kumer Foods,Cafe,Indiranagar
+2350,Kaul-Khosla Foods,North Indian,HSR Layout
+2351,Vasa-Chad Foods,Cafe,Koramangala
+2352,Raghavan PLC Foods,South Indian,Koramangala
+2353,Biswas-Sagar Foods,Chinese,Koramangala
+2354,Samra-Lall Foods,Chinese,Koramangala
+2355,Misra and Sons Foods,South Indian,Whitefield
+2356,"Bala, Ghose and Shanker Foods",South Indian,Jayanagar
+2357,"Bedi, Ranganathan and Muni Foods",Chinese,HSR Layout
+2358,"Chopra, Madan and Walia Foods",Cafe,Whitefield
+2359,Wason-Bora Foods,Chinese,Whitefield
+2360,Sankar-Bahl Foods,Chinese,Indiranagar
+2361,"Mani, Dave and Mukhopadhyay Foods",Pizza,HSR Layout
+2362,Mangat-Nagy Foods,Pizza,Whitefield
+2363,Samra-Sama Foods,Cafe,Koramangala
+2364,Baria Inc Foods,South Indian,Jayanagar
+2365,Agate Ltd Foods,North Indian,Indiranagar
+2366,Suri-Sarma Foods,South Indian,Jayanagar
+2367,Trivedi-D’Alia Foods,Cafe,Jayanagar
+2368,"Ratti, Sankaran and Mani Foods",Cafe,Koramangala
+2369,Borah LLC Foods,Biryani,Jayanagar
+2370,Barman LLC Foods,Cafe,Jayanagar
+2371,Nagy PLC Foods,Biryani,Jayanagar
+2372,Khanna-Ramakrishnan Foods,Cafe,Indiranagar
+2373,Tank Inc Foods,Pizza,HSR Layout
+2374,Tara Group Foods,Biryani,HSR Layout
+2375,Pandit Ltd Foods,South Indian,Whitefield
+2376,"Handa, Sen and Shah Foods",North Indian,HSR Layout
+2377,Arora Inc Foods,Chinese,Jayanagar
+2378,"Yohannan, Sharaf and Sheth Foods",Pizza,Jayanagar
+2379,"Yadav, Prakash and Khurana Foods",Pizza,Jayanagar
+2380,Doshi Ltd Foods,Biryani,Indiranagar
+2381,"Nagarajan, Puri and Gopal Foods",South Indian,Indiranagar
+2382,Ghosh and Sons Foods,Pizza,Indiranagar
+2383,Dani-Som Foods,South Indian,Indiranagar
+2384,Sahota LLC Foods,South Indian,Indiranagar
+2385,"Peri, Zachariah and Gala Foods",Cafe,Jayanagar
+2386,Setty-Khosla Foods,Pizza,Indiranagar
+2387,Barad-Shroff Foods,South Indian,Koramangala
+2388,"Bava, Dhar and Sampath Foods",Cafe,Jayanagar
+2389,"Vig, Pall and Mital Foods",North Indian,Whitefield
+2390,"Karnik, Dugar and Virk Foods",Pizza,Indiranagar
+2391,Anne Group Foods,Cafe,Indiranagar
+2392,Desai PLC Foods,Cafe,Jayanagar
+2393,"Parsa, Sagar and Muni Foods",Biryani,Koramangala
+2394,Dugal-Gupta Foods,Chinese,HSR Layout
+2395,Pal and Sons Foods,South Indian,Indiranagar
+2396,"Ratta, Rout and Chopra Foods",Cafe,Koramangala
+2397,"Kade, Gala and Sawhney Foods",Pizza,Jayanagar
+2398,Chhabra-Venkataraman Foods,South Indian,Indiranagar
+2399,Devi and Sons Foods,Chinese,Koramangala
+2400,Prakash-Baria Foods,Chinese,Whitefield
+2401,Subramanian Inc Foods,Biryani,Indiranagar
+2402,Bhakta and Sons Foods,Pizza,HSR Layout
+2403,"Bhatia, Bhattacharyya and Sule Foods",North Indian,Whitefield
+2404,"Suri, Desai and Lall Foods",Pizza,Indiranagar
+2405,Prakash PLC Foods,North Indian,Koramangala
+2406,Bains PLC Foods,Pizza,Whitefield
+2407,Varughese and Sons Foods,South Indian,HSR Layout
+2408,Bava-Vasa Foods,Biryani,Koramangala
+2409,"Dhaliwal, Sidhu and Jain Foods",Chinese,Indiranagar
+2410,Devi-Shukla Foods,Pizza,Koramangala
+2411,Borde-Kale Foods,Biryani,HSR Layout
+2412,Sarin-Dyal Foods,Pizza,Whitefield
+2413,Sethi-Sant Foods,Biryani,Whitefield
+2414,Kulkarni PLC Foods,Cafe,Koramangala
+2415,Bhatia Group Foods,North Indian,Indiranagar
+2416,Sankar-Bhalla Foods,North Indian,HSR Layout
+2417,Mitra PLC Foods,Chinese,Whitefield
+2418,"Sodhi, Khalsa and Chandran Foods",North Indian,Koramangala
+2419,"Gade, Buch and Bhargava Foods",Cafe,Indiranagar
+2420,Biswas-Chokshi Foods,South Indian,Whitefield
+2421,Lata PLC Foods,South Indian,Indiranagar
+2422,Sha Group Foods,Pizza,Whitefield
+2423,Lad Group Foods,Biryani,HSR Layout
+2424,Mukherjee-Mannan Foods,North Indian,HSR Layout
+2425,"Choudhary, Sengupta and Pandey Foods",Chinese,Whitefield
+2426,"Dewan, Chandra and Sen Foods",Pizza,Koramangala
+2427,Lanka PLC Foods,Chinese,Whitefield
+2428,"Dash, Prashad and Basu Foods",South Indian,Jayanagar
+2429,Desai-Ben Foods,South Indian,Jayanagar
+2430,"Ramaswamy, Chaudhuri and Parmar Foods",Cafe,Indiranagar
+2431,"Wagle, Balasubramanian and Choudhary Foods",Cafe,Whitefield
+2432,Mangat and Sons Foods,Chinese,Koramangala
+2433,Dayal-Shan Foods,South Indian,Koramangala
+2434,De and Sons Foods,Cafe,Jayanagar
+2435,Mital-Ganesh Foods,Chinese,Koramangala
+2436,Aurora-Kapur Foods,Chinese,Whitefield
+2437,"Gola, Guha and Mangal Foods",Pizza,Whitefield
+2438,Narang Group Foods,South Indian,Koramangala
+2439,Mukherjee Ltd Foods,Chinese,Whitefield
+2440,"Barad, Nath and Bath Foods",Biryani,Whitefield
+2441,Chaudhry LLC Foods,Chinese,HSR Layout
+2442,Ben-Iyer Foods,North Indian,Indiranagar
+2443,Dey-Bhatnagar Foods,Cafe,HSR Layout
+2444,"Talwar, Vora and Narasimhan Foods",Pizza,Indiranagar
+2445,"Chad, Gaba and Gade Foods",Biryani,Whitefield
+2446,Munshi-Gara Foods,Chinese,Whitefield
+2447,Prakash-Bhardwaj Foods,Biryani,Jayanagar
+2448,"Ramaswamy, Dewan and Bhagat Foods",Cafe,HSR Layout
+2449,"Sastry, Soni and Rai Foods",North Indian,Jayanagar
+2450,"Roy, Patil and Mandal Foods",Biryani,Koramangala
+2451,Rai-Bhagat Foods,Biryani,Whitefield
+2452,Devan and Sons Foods,South Indian,HSR Layout
+2453,Khare PLC Foods,North Indian,HSR Layout
+2454,Kapur-Dara Foods,North Indian,Whitefield
+2455,Sibal-Oommen Foods,Pizza,Jayanagar
+2456,Sura Inc Foods,North Indian,HSR Layout
+2457,Kamdar and Sons Foods,North Indian,Koramangala
+2458,Garg LLC Foods,North Indian,Indiranagar
+2459,"Mitter, Mishra and Wadhwa Foods",North Indian,Whitefield
+2460,"Loke, Dhillon and Vasa Foods",North Indian,Whitefield
+2461,Bajaj Group Foods,Pizza,Whitefield
+2462,Shere and Sons Foods,South Indian,Koramangala
+2463,Luthra LLC Foods,Pizza,HSR Layout
+2464,Nazareth Group Foods,Biryani,HSR Layout
+2465,"Radhakrishnan, Ratti and Gour Foods",Chinese,HSR Layout
+2466,Wadhwa Group Foods,North Indian,Koramangala
+2467,"Pall, Rajagopalan and Tank Foods",South Indian,Indiranagar
+2468,Loyal Group Foods,Chinese,HSR Layout
+2469,"Bhat, Subramaniam and Ahluwalia Foods",Biryani,Koramangala
+2470,Nayak Inc Foods,North Indian,Indiranagar
+2471,Doctor PLC Foods,Chinese,Whitefield
+2472,Bath Group Foods,South Indian,Indiranagar
+2473,Gopal-Misra Foods,Chinese,HSR Layout
+2474,Bhagat-Dada Foods,South Indian,Whitefield
+2475,Mander-Sahni Foods,South Indian,Koramangala
+2476,Balakrishnan and Sons Foods,Biryani,Whitefield
+2477,Goel-Kaur Foods,Biryani,Jayanagar
+2478,Rajan Ltd Foods,Pizza,Jayanagar
+2479,Amble PLC Foods,Pizza,Jayanagar
+2480,"Arya, Dixit and Mahajan Foods",Chinese,Jayanagar
+2481,Sood-Gour Foods,North Indian,HSR Layout
+2482,Dutta Ltd Foods,North Indian,Jayanagar
+2483,Palla-Mohan Foods,South Indian,Indiranagar
+2484,Ghose-Handa Foods,North Indian,Whitefield
+2485,"Bhagat, Samra and Toor Foods",Chinese,HSR Layout
+2486,"Sura, Bal and Narang Foods",North Indian,Whitefield
+2487,Bajwa and Sons Foods,North Indian,Koramangala
+2488,"Lad, Datta and Batta Foods",Pizza,Jayanagar
+2489,Ram-Sankaran Foods,Pizza,Whitefield
+2490,Khanna and Sons Foods,Pizza,HSR Layout
+2491,Seth-Kanda Foods,Pizza,Whitefield
+2492,"Acharya, Balan and Bali Foods",Cafe,Whitefield
+2493,Krish-Majumdar Foods,Pizza,HSR Layout
+2494,Narayanan Group Foods,Cafe,Koramangala
+2495,Sani Group Foods,South Indian,Koramangala
+2496,Mane-Chaudhry Foods,Cafe,Koramangala
+2497,Nigam-Tiwari Foods,Biryani,Indiranagar
+2498,Sarma PLC Foods,Biryani,Koramangala
+2499,Halder-Chakrabarti Foods,South Indian,Whitefield
