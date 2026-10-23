@@ -1,0 +1,22 @@
+# Secrets
+.env
+
+# Generated data (reproducible from src/generate_data.py)
+data/*.csv
+
+# Logs
+logs/*.log
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Tableau
+*.hyper
+*.tde
+
+# OS
+.DS_Store
+Thumbs.db
