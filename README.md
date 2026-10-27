@@ -1,105 +1,107 @@
-# Automated BI Dashboard for Zomato (Simulated)
+# Zomato BI Dashboard
 
-An end-to-end simulated BI pipeline: synthetic order data is generated nightly, loaded into
-PostgreSQL, transformed into an analysis-ready mart, and visualized in a Tableau dashboard
-(KPI cards, monthly revenue trend, orders-by-zone map, restaurant performance scatter plot,
-and a customer cohort/retention analysis).
+A small practice project: fake Zomato-style order data goes into PostgreSQL, a SQL step turns it
+into one flat table, and a Tableau workbook reads that table and draws four dashboards. A Python
+script does the middle part, and Windows Task Scheduler can run it every morning.
 
-## Architecture
+None of the data is real. It's randomly generated, which is why the charts look fairly flat.
 
+## What it looks like
+
+| Overview | Restaurants |
+|---|---|
+| ![Overview](assets/dashboard1_overview.png) | ![Restaurants](assets/dashboard2_restaurants.png) |
+
+| Customer cohorts | Orders vs average order value |
+|---|---|
+| ![Customer cohorts](assets/dashboard3_cohorts.png) | ![Orders vs AOV](assets/dashboard4_aov.png) |
+
+## How it fits together
+
+1. `src/generate_data.py` makes 5,000 customers, 500 restaurants and 25,000 orders as CSV files in `data/`.
+2. `src/run_pipeline.py` runs the whole thing: it calls the generator, creates the raw tables if they
+   don't exist, empties them, loads the CSVs, then rebuilds `mart_performance` (all the SQL is in `sql/`).
+3. The same script writes the finished table out to `data/zomato_mart.csv`.
+4. `Zomato_Db.twb` reads that CSV.
+
+The database work in step 2 (create, empty, load, rebuild, export) runs in one transaction, so
+if something fails halfway the database is left as it was. Raw tables are always reloaded
+before the mart is rebuilt.
+
+## Running it
+
+You need PostgreSQL and Python 3.10 or newer.
+
+```bash
+pip install -r requirements.txt
 ```
-src/generate_data.py   -> data/*.csv               (synthetic customers/restaurants/orders)
-src/run_pipeline.py    -> sql/00_create_raw_tables.sql  (bootstrap schema, idempotent)
-                        -> sql/01_load_raw.sql           (truncate staging tables)
-                        -> COPY csv -> raw_* tables       (via psycopg2 copy_expert, client-side)
-                        -> sql/02_build_mart.sql          (rebuild mart_performance)
-Zomato_Db.twb           -> connects to mart_performance via Tableau Bridge, refreshes extract
+
+Copy `.env.example` to `.env` and put in your own database details. `.env` is in `.gitignore`,
+so it won't get committed. Create an empty database called `zomato_db`, then:
+
+```bash
+python src/run_pipeline.py
 ```
 
-The mart is always built from data that was *just* loaded in the same run — raw tables are
-truncated and reloaded before `mart_performance` is rebuilt, never after.
+Progress is printed and also written to `logs/pipeline.log`.
 
-## Setup
+On Windows, use `127.0.0.1` rather than `localhost` for `DB_HOST` if you get a connection error.
+`localhost` can resolve to IPv6, and the default Postgres setup often only allows IPv4 locally.
 
-1. Install PostgreSQL and Python 3.10+.
-2. `pip install -r requirements.txt`
-3. `cp .env.example .env` and fill in your real DB credentials. `.env` is gitignored — never commit it.
-4. Create the database once: `createdb zomato_db` (or via psql/pgAdmin).
-5. Run the pipeline manually to verify it works end-to-end:
-   ```bash
-   python src/run_pipeline.py
-   ```
-   This generates fresh CSVs into `data/`, creates the raw tables if missing, reloads them,
-   and rebuilds `mart_performance`.
-6. Open `Zomato_Db.twb` in Tableau, point the data source connection at your local
-   `zomato_db` / `mart_performance` table, and republish to Tableau Public if desired.
+## Opening the Tableau workbook
 
-## Automating it (make it actually run on a schedule)
+The workbook stores the path to the CSV from the machine it was made on, so it won't find the
+file after you clone this. Run the pipeline once so `data/zomato_mart.csv` exists, open the
+workbook, and in *Data > Edit Data Source* point it at your copy.
 
-The pipeline is a single script (`src/run_pipeline.py`), so "automating" it just means getting
-Windows to run that script on a timer, and getting Tableau to refresh after it finishes.
+I used Tableau Public (the free desktop version). It can only connect to files, not to a
+database like Postgres, which is why the pipeline exports a CSV. It also has no scheduled
+refresh, so after the pipeline runs you refresh the data yourself in Tableau (*Data > Refresh*).
 
-### 1. Schedule the data pipeline (Windows Task Scheduler)
+The map uses `zone_lat` / `zone_lng` columns from the data. Tableau couldn't place Bengaluru
+neighbourhood names like "Jayanagar" on its own.
 
-From an **elevated** PowerShell prompt, from this project folder:
+## Running it every morning
+
+`register_task.ps1` creates a Windows scheduled task called `ZomatoBIPipeline` that runs the
+pipeline at 05:00. Open PowerShell as Administrator (the title bar should say
+"Administrator: Windows PowerShell"), then:
 
 ```powershell
+cd path\to\this\folder
 .\register_task.ps1
 ```
 
-This registers a task named `ZomatoBIPipeline` that runs `python src\run_pipeline.py` daily
-at 05:00, with up to 3 retries on failure. Test it immediately without waiting for the trigger:
+To try it straight away instead of waiting until 5 AM:
 
 ```powershell
 Start-ScheduledTask -TaskName 'ZomatoBIPipeline'
 ```
 
-Check `logs/pipeline.log` afterward to confirm it ran cleanly. You can also open
-**Task Scheduler > Task Scheduler Library > ZomatoBIPipeline** to see run history and
-last-run result codes.
+Two things to know:
+- The script has my Python path written into it (`C:\Users\deipt\AppData\Local\Programs\Python\Python313\python.exe`).
+  Change the `$Python` line to wherever your `python.exe` is.
+- The task is allowed to start and keep running on battery, so a laptop doesn't skip a run.
 
-### 2. Schedule the Tableau refresh (Tableau Bridge)
-
-Tableau Bridge is a separate app (not part of this repo) that keeps a published Tableau
-Public/Online workbook in sync with a local data source on a schedule:
-
-1. Install **Tableau Bridge** and sign in with the account that published `Zomato_Db.twb`.
-2. In Tableau Public/Online, open the workbook's data source settings and set the
-   **refresh schedule** to run daily at 06:00 (one hour after the pipeline, so
-   `mart_performance` is guaranteed to be fresh by the time Bridge reads it).
-3. Bridge runs as a background Windows service once configured — no script needed on your
-   side beyond keeping it installed and signed in.
-
-### End-to-end automated schedule
-
-| Time  | What runs               | Where |
-|-------|--------------------------|-------|
-| 05:00 | `ZomatoBIPipeline` task  | Windows Task Scheduler, this repo |
-| 06:00 | Extract refresh          | Tableau Bridge (configured in Tableau, not in this repo) |
-
-## Project layout
+## Files
 
 ```
-.
-├── data/                 # generated CSVs (gitignored)
-├── logs/                 # pipeline run logs (gitignored)
-├── sql/
-│   ├── 00_create_raw_tables.sql
-│   ├── 01_load_raw.sql
-│   └── 02_build_mart.sql
-├── src/
-│   ├── generate_data.py
-│   └── run_pipeline.py
-├── assets/               # dashboard screenshots
-├── Zomato_Db.twb
-├── register_task.ps1
-├── .env.example
-└── requirements.txt
+data/                  generated CSVs (not committed)
+logs/                  pipeline.log (not committed)
+sql/
+  00_create_raw_tables.sql
+  01_load_raw.sql
+  02_build_mart.sql
+src/
+  generate_data.py
+  run_pipeline.py
+assets/                dashboard screenshots
+Zomato_Db.twb          the Tableau workbook
+register_task.ps1      sets up the daily task
+.env.example           template for your database settings
+requirements.txt
 ```
 
-## Tech stack
+## Built with
 
-- **Warehouse:** PostgreSQL
-- **Transformation:** SQL (joins, `COPY`)
-- **Automation:** Python (pandas, Faker, psycopg2), Windows Task Scheduler
-- **Visualization:** Tableau Public / Tableau Bridge
+PostgreSQL, Python (pandas, Faker, psycopg2), Windows Task Scheduler, Tableau Public.
